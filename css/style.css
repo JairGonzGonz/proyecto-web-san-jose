@@ -1,0 +1,42 @@
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+menu li{
+    position: relative;    
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    background-color: black;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: red;
+    width: 150px;
+}
+
+.sub-menu a{
+    padding: 20 px;
+    background-color: red;
+}
+
+.sub-menu li{
+    display: none;
+}
+
+#sub-menu-quienes-somos:hover .sub-menu{
+    display: block;
+}
+
+#sub-menu-quienes-somos:hover .sub-menu li{
+    display: block;
+}
