@@ -4,23 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEP San Jose</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
-    <h1>Hola mundo</h1>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Admision</a></li>
-            <li id="sub-menu-quienes-somos"><a href="#">Quienes somos?</a>
-                <ul class="sub-menu">
-                    <li><a href="#">Mision</a></li>
-                    <li><a href="#">Vision</a></li>
-                </ul>
-            </li>    
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Ubicanos</a></li>
-        </ul>
-    </nav>    
+    <header id="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="img-logo" src="./assets/images/logo-provisional.jpg" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Admision</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Quienes somos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Historia</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Mision</a></li>
+                        <li><a class="dropdown-item" href="#">Vision</a></li>
+                    </ul>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                  </li>                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contactanos</a>
+                  </li>   
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ubicanos</a>
+                  </li>             
+                </ul>               
+              </div>
+            </div>
+        </nav>
+    </header>
+    
 </body>
 </html>

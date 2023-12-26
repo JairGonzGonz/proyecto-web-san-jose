@@ -1,42 +1,17 @@
-.menu ul{
-    list-style: none;
-    padding: 0;
+*{
     margin: 0;
-    display: flex;
+    padding: 0;
 }
 
-menu li{
-    position: relative;    
+body{
+    font-family: sans-serif;
 }
 
-.menu a{
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    display: block;
-    background-color: black;
+.img-logo{
+    width: 40px;
+    padding: 0;
 }
 
-.sub-menu{
-    display: none;
-    position: absolute;
-    background-color: red;
-    width: 150px;
-}
-
-.sub-menu a{
-    padding: 20 px;
-    background-color: red;
-}
-
-.sub-menu li{
-    display: none;
-}
-
-#sub-menu-quienes-somos:hover .sub-menu{
-    display: block;
-}
-
-#sub-menu-quienes-somos:hover .sub-menu li{
-    display: block;
+.navbar{
+    background-image: linear-gradient(to right, #3b6cff,#0461b8);
 }
