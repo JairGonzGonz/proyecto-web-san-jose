@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 body{
     font-family: sans-serif;
 }
@@ -14,6 +20,7 @@ body{
 
 .navbar{
     background-image: linear-gradient(to right, #3e3e93,#0461b8);
+    
 }
 
 .navbar-nav li a{
