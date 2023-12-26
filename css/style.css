@@ -19,8 +19,8 @@ body{
 }
 
 .navbar{
-    background-image: linear-gradient(to right, #3e3e93,#0461b8);
-    
+    background-image: linear-gradient(to right, #3e3e93,#0461b8);    
+    padding: 0;
 }
 
 .navbar-nav li a{
@@ -29,16 +29,32 @@ body{
 }
 
 .own-carousel{
-    padding: 20px 0;
+    padding: 20px 0;    
 }
 
 .carousel-item img{
-    height: 600px;
+    height: 600px;   
 }
 
 .own-cards{
      padding: 20px;
+     margin-top: 15px;
 }
 
+ .about-us-title{
+    color: #3e3e93;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    padding: 5px;
+ }
 
-
+ .about-us-title::before{
+    content: '';
+    background: #7b1798;
+    height: 5px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+ }
