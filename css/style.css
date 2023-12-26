@@ -8,10 +8,30 @@ body{
 }
 
 .img-logo{
-    width: 40px;
+    height: 40px;
     padding: 0;
 }
 
 .navbar{
-    background-image: linear-gradient(to right, #3b6cff,#0461b8);
+    background-image: linear-gradient(to right, #3e3e93,#0461b8);
 }
+
+.navbar-nav li a{
+    color: #b2d3d3;
+    font-weight: 600;
+}
+
+.own-carousel{
+    padding: 20px 0;
+}
+
+.carousel-item img{
+    height: 600px;
+}
+
+.own-cards{
+     padding: 20px;
+}
+
+
+
