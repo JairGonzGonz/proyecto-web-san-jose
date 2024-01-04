@@ -65,8 +65,14 @@
 }
 
 .own-cards{
-    padding: 20px;
+    padding: 30px;
     margin-top: 15px;
+}
+
+.card{
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .about-us-title{
@@ -86,6 +92,41 @@
    display: block;
    transform: translateY(63px);
 }
+
+.contact-us-title{
+	color: #3e3e93;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	padding: 5px;
+ }
+ 
+ .contact-us-title::before{
+	content: '';
+	background: #7b1798;
+	height: 5px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	transform: translateY(63px);
+ }
+
+ .contact-us-text{
+	margin-bottom: 15px;
+ }
+
+ .mi-boton{	
+	width: 190px;
+ }
+
+ .form-label{
+	color: #0F4CA3;
+	font-size: 20px;
+ }
+
+ #nombre_apellido, #celular, #correo{
+	max-width: 550px;
+ }
 
 .navbar-light .navbar-brand span {
 	color: #0F4CA3
