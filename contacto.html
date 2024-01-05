@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
 	<title>Contactanos</title>
 </head>
 
 <body>
-  <header class="nav-bar bg-body-tertiary">
+  <header class="nav-bar  bg-body-tertiary">
     <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><span>San Jose</span> SCHOOL</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
@@ -30,7 +30,7 @@
               <a class="nav-link" href="contacto.html">CONTACTO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">NUESTRAS SEDES</a>
+              <a class="nav-link" href="location.html">NUESTRAS SEDES</a>
             </li>
             <li class="nav-item">
               <a class="getstarted" href="index.html">Admision</a>
@@ -40,35 +40,55 @@
       </div>
     </nav>
   </header>
-	
-  <br>
-<div class="container-fluid">
-  <div class="container mt-5">
-    <h2 class="contact-us-title text-center">Contactanos</h2>
-    <p class="contact-us-text text-center">Envianos tu consulta y uno de nuestros colaboradores se pondra en contacto contigo a la brevedad.</p>
-    <form action="https://formsubmit.co/jair.gonzzales@gmail.com" method="POST">
-      <div class="mb-3">
-        <label for="nombre_apellido" class="form-label">Nombre y Apellidos:</label>
-        <input placeholder="Nombres y apellidos completos" type="text" class="form-control" id="nombre_apellido" name="nombre_apellido" required>
-      </div>
-      <div class="mb-3">
-        <label for="celular" class="form-label">Celular:</label>
-        <input placeholder="Numero telefonico" type="tel" class="form-control" id="celular" name="celular" required>
-      </div>
-      <div class="mb-3">
-        <label for="correo" class="form-label">Correo Electrónico:</label>
-        <input placeholder="Correo Electrónico" type="email" class="form-control" id="correo" name="correo" required>
-      </div>
-      <div class="mb-3">
-        <label for="consulta" class="form-label">Consulta:</label>
-        <textarea placeholder="Ingresa tu consulta aqui" class="form-control" id="consulta" name="consulta" rows="4" required></textarea>
-      </div>
-      <button type="submit" class=" mi-boton btn btn-primary offset-5">Enviar</button>
-    </form>
-  </div>
-</div>
-  
+	<br>  
 
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="contact-us-title">Contactanos</h2>
+          <p class="contact-us-text">Envianos tu consulta y uno de nuestros colaboradores se pondra en contacto contigo a la brevedad.</p>
+        </div>      
+      </div>
+    </div>
+  </div>
+
+  <section class="form-and-map">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <form class="contact-us-form" action="https://formsubmit.co/jair.gonzzales@gmail.com" method="POST">
+              <div class="mb-3">
+                <label for="nombre_apellido" class="form-label">Nombre y Apellidos:</label>
+                <input placeholder="Nombres y apellidos completos" type="text" class="form-control" id="nombre_apellido" name="nombre_apellido" required>
+              </div>
+              <div class="mb-3">
+                <label for="celular" class="form-label">Celular:</label>
+                <input placeholder="Numero telefonico" type="tel" class="form-control" id="celular" name="celular" required>
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico:</label>
+                <input placeholder="Correo Electrónico" type="email" class="form-control" id="correo" name="correo" required>
+              </div>
+              <div class="mb-3">
+                <label for="consulta" class="form-label">Consulta:</label>
+                <textarea placeholder="Ingresa tu consulta aqui" class="form-control" id="consulta" name="consulta" rows="4" required></textarea>
+              </div>
+              <button type="submit" class=" mi-boton btn btn-primary offset-7">Enviar</button>
+            </form>
+          </div> 
+  
+          <div class="col-6 text-center my_banner">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.845100113203!2d-76.9511555128418!3d-12.0117323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c527aa20ac85%3A0xe2c4bd9bee551fbd!2sColegio%20San%20Jos%C3%A9%20-%20Sede%20Huachipa!5e0!3m2!1ses!2spe!4v1704412096466!5m2!1ses!2spe" width="650" height="535" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+             <span>Banner aqui</span>
+          </div>       
+        </div>     
+         
+      </div>
+  </section>
+  
+  </div>
   
 </body>
 </html>

@@ -95,9 +95,11 @@
 
 .contact-us-title{
 	color: #3e3e93;
+	margin-top: 50px;
 	margin-bottom: 30px;
 	text-transform: uppercase;
 	padding: 5px;
+	font-weight: 600;
  }
  
  .contact-us-title::before{
@@ -108,11 +110,12 @@
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	transform: translateY(63px);
+	transform: translateY(50px);
  }
 
  .contact-us-text{
-	margin-bottom: 15px;
+	margin-top: 30px;
+	margin-bottom: 25px;
  }
 
  .mi-boton{	
@@ -125,7 +128,21 @@
  }
 
  #nombre_apellido, #celular, #correo{
-	max-width: 550px;
+	max-width: 400px;
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0  5px 15px; */
+ }
+
+ .contact-us-form{
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0  5px 15px;
+	padding: 30px 30px;
+ }
+
+ .my_banner{
+	margin-top: auto;
+	margin-bottom: auto;
+	justify-content: center;
+	text-align: center;
  }
 
 .navbar-light .navbar-brand span {
