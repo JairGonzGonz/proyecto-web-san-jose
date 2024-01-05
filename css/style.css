@@ -218,7 +218,7 @@
  footer{
 	
 	width: 100%;
-	height: 130px;
+	height: auto;
 	padding: 17px 0 17px 0;
 	justify-content: center;
 	font-size: 13px;
