@@ -145,6 +145,20 @@
 	text-align: center;
  }
 
+ footer{
+	display: flex;
+	width: 100%;
+	height: auto;
+	padding: 17px 0 17px 0;
+	justify-content: center;
+	font-size: 13px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin-top: 35px;
+	text-align: center;
+	align-items: center;
+	background: #D9D9D9;
+ }
+
 .navbar-light .navbar-brand span {
 	color: #0F4CA3
 }
