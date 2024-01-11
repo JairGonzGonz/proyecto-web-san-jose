@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxjrEzs-Z87-XemjPdNdTpJDLaH3_nY0g&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
     <title>Ubicanos</title>
 </head>
 
@@ -70,7 +71,11 @@
                 <!-- linea vertical -->
               </div>
               <div class="col-md-9 map-area text-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.461351678431!2d-76.93697202332646!3d-12.011727010855958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c527aa20ac85%3A0xe2c4bd9bee551fbd!2sColegio%20San%20Jos%C3%A9%20-%20Sede%20Huachipa!5e0!3m2!1ses!2spe!4v1704425792034!5m2!1ses!2spe" width="90%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <gmp-map center="-12.025010108947754,-76.98880767822266" zoom="14" map-id="DEMO_MAP_ID">
+                  <gmp-advanced-marker position="-12.025010108947754,-76.98880767822266" title="My location">
+                  </gmp-advanced-marker>
+                </gmp-map>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.461351678431!2d-76.93697202332646!3d-12.011727010855958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c527aa20ac85%3A0xe2c4bd9bee551fbd!2sColegio%20San%20Jos%C3%A9%20-%20Sede%20Huachipa!5e0!3m2!1ses!2spe!4v1704425792034!5m2!1ses!2spe" width="90%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
               </div>
             </div>
         </div>

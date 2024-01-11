@@ -74,12 +74,22 @@ body {
 .own-cards{
     padding: 30px;
     margin-top: 15px;
+	transition: transform 0.5s ease;
+}
+
+.own-cards img{
+	padding: 10px;
+}
+
+.card:hover{
+    transform: scale(1.1);
 }
 
 .card{
 	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
+	transition: transform 0.5s ease;
 }
 
 .about-us-title{
