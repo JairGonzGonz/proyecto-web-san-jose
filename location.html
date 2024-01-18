@@ -6,103 +6,152 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxjrEzs-Z87-XemjPdNdTpJDLaH3_nY0g&callback=console.debug&libraries=maps,marker&v=beta">
+    <script>
+      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+        key: "AIzaSyBxjrEzs-Z87-XemjPdNdTpJDLaH3_nY0g",
+        v: "weekly",
+        // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+        // Add other bootstrap parameters as needed, using camel case.
+      });
     </script>
+    
     <title>Ubicanos</title>
 </head>
 
 <body>
-    <header class="nav-bar  bg-body-tertiary">
-        <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="#"><span>San Jose</span> SCHOOL</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#about-us">QUIENES SOMOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="galeria.html">GALERIA</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">CONTACTO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="location.html">NUESTRAS SEDES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="getstarted" href="index.html">Admision</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+  <header class="nav-bar  bg-body-tertiary">
+    <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span>San Jose</span> SCHOOL</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about-us">QUIENES SOMOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">GALERIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">NUESTRAS SEDES</a>
+            </li>
+            <li class="nav-item">
+              <a class="getstarted" href="index.html">Admision</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-      <div class="container-fluid mapas">
-        <div class="container">
-            <div class="row espacio">
-                <div class="col-md-12">
-                  <br><br>
-                  <h2 class="locate-us-title text-center">Ubicanos</h2>
-                  <p class="text-center">Nos podras encontrar en nuestras diferentes sedes. Aqui encontraras todo la informacion que necesitas.</p>
-                  <br>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2 locations">
-                <div>
-                  <a href="#">Sede 1</a>
-                </div>
-                <div>
-                  <a href="#">Sede 2</a>
-                </div>
-                <div>
-                  <a href="#">Sede 3</a>
-                </div>
-                <div>
-                  <a href="#">Sede 4</a>
-                </div>
-              </div>
-              <div class="col-1 col-md-1 col-lg-1 separator">
-                <!-- linea vertical -->
-              </div>
-              <div class="col-md-9 map-area text-center">
-                <gmp-map center="-12.025010108947754,-76.98880767822266" zoom="14" map-id="DEMO_MAP_ID">
-                  <gmp-advanced-marker position="-12.025010108947754,-76.98880767822266" title="My location">
-                  </gmp-advanced-marker>
-                </gmp-map>               
-              </div>
+  <div class="container-fluid mapas">
+    <div class="container">
+        <div class="row espacio">
+            <div class="col-md-12">
+              <br><br>
+              <h2 class="locate-us-title text-center">Ubicanos</h2>
+              <p class="text-center">Nos podras encontrar en nuestras diferentes sedes. Aqui encontraras todo la informacion que necesitas.</p>
+              <br>
             </div>
         </div>
+        <div class="row">
+          <div class="col-md-2 locations">
+            <div>
+              <a href="#" id="link1" onclick="mostrarMapa(-12.011727,-76.936972)">Huachipa</a>
+            </div>
+            <div>
+              <a href="#" id="link1" onclick="mostrarMapa(-12.0249488,-76.993651)">Zarate</a>
+            </div>
+            <div>
+              <a href="#" id="link1" onclick="mostrarMapa(-11.8819264,-77.077264)">Puente Piedra</a>
+            </div>
+            <div>
+              <a href="#" id="link1" onclick="mostrarMapa(-11.9993457,-76.8595303)">Carapongo</a>
+            </div>
+          </div>
+          <div class="col-1 col-md-1 col-lg-1 separator">
+            <!-- linea vertical -->
+          </div>
+          <div id="map-container" class="col-md-9 map-area text-center">
+            <!-- <gmp-map center="-12.025010108947754,-76.98880767822266" zoom="14" map-id="DEMO_MAP_ID">
+              <gmp-advanced-marker position="-12.025010108947754,-76.98880767822266" title="My location" icon="http://maps.google.com/mapfiles/ms/icons/red-dot.png">
+              </gmp-advanced-marker>
+            </gmp-map>                -->
+
+                                    
+          
+          </div>
+        </div>
     </div>
+  </div>  
     <br><br>
 
-    <footer class="my_footer">
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-4 text-center">
-              <p><br>2023 Todos los derechos reservados.</p>
-              <p>CEP San Jose</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <p>Jr. Haravicu 333 Urb. Zárate - SJL<br>
-                Av. El Polo Mz I Lt 7 Urb. El Club - Huachipa - 922 036 390 <br>
-                Asoc. María Magdalena Mz. I Lt 7 - Carapongo - 983 499 472 <br>
-                Av. Antigua Panamericana Norte Mz B Lt 15,16,17,18 y 22 Res. el Palomar - Puente Piedra - 960 604 276</p>              
-            </div>
-            <div class="col-md-4 text-center">
-              <p>Redes Sociales</p>
-              <p>***</p>
-            </div>
+  <footer class="my_footer">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <p><br>2023 Todos los derechos reservados.</p>
+            <p>CEP San Jose</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p>Jr. Haravicu 333 Urb. Zárate - SJL<br>
+              Av. El Polo Mz I Lt 7 Urb. El Club - Huachipa - 922 036 390 <br>
+              Asoc. María Magdalena Mz. I Lt 7 - Carapongo - 983 499 472 <br>
+              Av. Antigua Panamericana Norte Mz B Lt 15,16,17,18 y 22 Res. el Palomar - Puente Piedra - 960 604 276</p>              
+          </div>
+          <div class="col-md-4 text-center">
+            <p>Redes Sociales</p>
+            <p>***</p>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+
+  <script>
+    async function initMap() {
+      // Request needed libraries.
+      const { Map } = await google.maps.importLibrary("maps");
+      const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+      const map = new Map(document.getElementById("map"), {
+        center: { lat: -12.011727, lng: -76.936972 },
+        zoom: 15,
+        mapId: "4504f8b37365c3d0",
+      });
+      const marker = new AdvancedMarkerElement({
+        map,
+        position: { lat: -12.011727, lng: -76.936972 },
+      });
+    }
+
+    initMap();
+  </script>
+
+  <script>
+    function mostrarMapa(latitud, longitud) {
+      // Elimina el contenido anterior del div
+      document.getElementById("map-container").innerHTML = '';
+
+      // Crea un nuevo mapa en el div con la nueva ubicación
+      var map = new google.maps.Map(document.getElementById('map-container'), {
+        center: { lat: latitud, lng: longitud },
+        zoom: 15,
+      });
+
+      // Añade un marcador
+      var marker = new google.maps.Marker({
+        position: { lat: latitud, lng: longitud },
+        map: map,
+        title: 'Mi ubicación'
+      });
+    }
+  </script>
     
 
 </body>
