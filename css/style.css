@@ -3,69 +3,12 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main{
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 50px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	width: 90%;
-	height: 450px;
-	color: #3e3e93;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
-main h1{
-	font-weight: 500;
-	font-size: 35px;
-}
-
-.carousel-item {
-	height: 100vh;
-	min-height: 300px;
-}
-.carousel-caption {
-	bottom: 220px;
-	z-index: 2;
-}
-.carousel-caption h5 {
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
-}
-.carousel-caption p {
-	width: 60%;
-	margin: auto;
-	font-size: 18px;
-	line-height: 1.9;
-}
-.carousel-caption a {
-	text-transform: uppercase;
-	text-decoration: none;
-	background: #0F4CA3;
-	padding: 5px 20px;
-	display: inline-block;
-	color: #fff;
-	margin-top: 15px;
-	border-radius: 5px;
-}
-.carousel-inner:before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.377);
-	z-index: 1;
-}
+/* Estilos de mi Home / navbar */
 .navbar .getstarted {
 	background: #0F4CA3;
 	margin-left: 30px;
@@ -76,11 +19,13 @@ main h1{
 	padding: .5rem 1rem;
 	line-height: 2.3;
 }
+
 .navbar-nav a {
 	font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 500;
 }
+
 .navbar-light .navbar-brand {
 	color: #000;
 	font-size: 25px;
@@ -89,76 +34,243 @@ main h1{
 	letter-spacing: 2px;
 }
 
-.own-cards{
-    padding: 30px;
-    margin-top: 15px;
+.navbar-light .navbar-brand span {
+	color: #0F4CA3
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+	color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+
+.w-100 {
+	height: 100vh;
+}
+
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+
+/* ajusta algunos estilos para dispositivos con pantallas más pequeñas, centrando el texto en la barra de navegación, 
+ajustando la posición y tamaño del texto en los elementos de la clase .carousel-caption, y ocultando el elemento con la
+ clase .getstarted dentro de la barra de navegación. */
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+
+	.carousel-caption {
+		bottom: 165px;
+	}
+
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+
+	.navbar .getstarted {
+		display: none;
+	}
+}
+
+/* Estios de mi Home / Carrusel */
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+
+/* Ajusta la posición y el índice de apilamiento de los elementos con la clase .carousel-caption de manera que
+ se posicionen a 220 píxeles desde la parte inferior de su contenedor y tengan un índice de apilamiento de 2 para
+  que estén por encima de otros elementos en la misma capa. */
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #0F4CA3;
+	padding: 5px 20px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.377);
+	z-index: 1;
+}
+
+/* Estilos de los cards en la pagina Home / Quienes somos */
+.own-cards {
+	padding: 30px;
+	margin-top: 15px;
 	transition: transform 0.5s ease;
 }
 
-.own-cards img{
+.own-cards img {
 	padding: 10px;
 }
 
-.card:hover{
-    transform: scale(1.1);
+.card:hover {
+	transform: scale(1.1);
 }
 
-.card{
+.card {
 	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
 	transition: transform 0.5s ease;
 }
 
-.about-us-title{
-   color: #3e3e93;
-   margin-bottom: 30px;
-   text-transform: uppercase;
-   padding: 5px;
+/* Estilos de mi titulo SOBRE NOSOTROS de QUIENES SOMOS */
+.about-us-title {
+	color: #3e3e93;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	padding: 5px;
 }
 
-.mi-galeria{
+.about-us-title::before {
+	content: '';
+	background: #7b1798;
+	height: 5px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	transform: translateY(63px);
+}
+
+/* Pagina Galeria */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.mi-galeria {
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
 
-.locate-us-title{
-	color: #3e3e93;
-	margin-top: 25px;
-	margin-bottom: 15px;
-	text-transform: uppercase;
-	padding: 5px;
- }
 
- .locate-us-title h2{
-	margin-bottom: 0;
- }
-
- .mapas{
-	padding-bottom: 15px;
- }
-
-.about-us-title::before{
-   content: '';
-   background: #7b1798;
-   height: 5px;
-   width: 250px;
-   margin-left: auto;
-   margin-right: auto;
-   display: block;
-   transform: translateY(63px);
+/* Crear cuatro columnas iguales que estén una al lado de la otra. */
+.column {
+	flex: 25%;
+	max-width: 33.3%;
+	padding: 0 4px;
 }
 
-.contact-us-title{
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	filter: grayscale(1) brightness(0.5);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s linear;
+}
+
+.column img:hover {
+	filter: grayscale(0);
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+/* Diseño responsivo: hace que las dos columnas se apilen una encima de la otra en lugar de estar una al lado de la otra. */
+@media screen and (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	.column img {
+		filter: grayscale(0) brightness(1);
+	}
+}
+
+/* Pagina Contacto. Formulario y banner */
+.mi-boton {
+	width: 190px;
+}
+
+.form-label {
+	color: #0F4CA3;
+	font-size: 20px;
+}
+
+#nombre_apellido,
+#celular,
+#correo {
+	max-width: 400px;
+}
+
+.contact-us-form {
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+	padding: 30px 30px;
+}
+
+.contact-us-form .btn:hover {
+	background-color: #7b1798;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.contact-us-title {
 	color: #3e3e93;
 	margin-top: 50px;
 	margin-bottom: 30px;
 	text-transform: uppercase;
 	padding: 5px;
 	font-weight: 600;
- }
- 
- .contact-us-title::before{
+}
+
+.contact-us-title::before {
 	content: '';
 	background: #7b1798;
 	height: 5px;
@@ -167,65 +279,58 @@ main h1{
 	margin-right: auto;
 	display: block;
 	transform: translateY(50px);
- }
+}
 
- .contact-us-text{
+.contact-us-text {
 	margin-top: 30px;
 	margin-bottom: 25px;
- }
+}
 
- .mi-boton{	
-	width: 190px;
- }
-
- .form-label{
-	color: #0F4CA3;
-	font-size: 20px;
- }
-
- #nombre_apellido, #celular, #correo{
-	max-width: 400px;	
- }
-
- .contact-us-form{
-	background-color: #fff;
-	box-shadow: rgba(0, 0, 0, 0.35) 0  5px 15px;
-	padding: 30px 30px;
- }
-
- .contact-us-form .btn:hover{
-	background-color: #7b1798;
-	text-transform: uppercase;
-	letter-spacing: 2px;
- }
-
- .my_banner{
+.my_banner {
 	margin-top: auto;
 	margin-bottom: auto;
 	justify-content: center;
 	text-align: center;
- }
+}
 
- .locations div{
+.form-and-banner {
+	margin-bottom: 25px;
+}
+
+.form-and-banner div img {
+	width: 100%;
+	height: 500px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-top: 18px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+/* Pagina Ubicanos */
+.map-area {
+	box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+.locations div {
 	font-size: 14px;
 	font-weight: 600;
 	margin-top: 45px;
 	margin-left: 100px;
 	text-decoration: none;
- }
+}
 
- .locations div a{
+.locations div a {
 	text-decoration: none;
 	color: #0F4CA3;
- }
+}
 
- .locations div a:hover{
+.locations div a:hover {
 	color: #7b1798;
 	border: #7b1798;
 	text-decoration: underline;
- }
+}
 
- .locate-us-title::before{
+.locate-us-title::before {
 	content: '';
 	background: #7b1798;
 	height: 5px;
@@ -234,9 +339,25 @@ main h1{
 	margin-right: auto;
 	display: block;
 	transform: translateY(50px);
- }
+}
 
- .separator::before{
+.locate-us-title {
+	color: #3e3e93;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	padding: 5px;
+}
+
+.locate-us-title h2 {
+	margin-bottom: 0;
+}
+
+.mapas {
+	padding-bottom: 15px;
+}
+
+.separator::before {
 	content: '';
 	height: 300px;
 	width: 5px;
@@ -245,28 +366,11 @@ main h1{
 	margin-right: auto;
 	display: block;
 	border-radius: 5px;
-	
- }
+}
 
- .form-and-map{
-	margin-bottom: 25px;	
- }
+/* footer */
+footer {
 
- .form-and-map div img{
-	width: 100%;
-	height: 500px;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-top: 18px;
-	box-shadow: rgba(0, 0, 0, 0.35) 0  5px 15px;
- }
-
- .map-area {
-	box-shadow: rgba(0, 0, 0, 0.35) 0  5px 15px;
- }
-
- footer{
-	
 	width: 100%;
 	height: auto;
 	justify-content: center;
@@ -278,98 +382,10 @@ main h1{
 	background: #0F4CA3;
 	color: white;
 	padding-top: 10px;
- }
+}
 
- footer img{
+footer img {
 	width: 30px;
 	height: 30px;
 	border-radius: 5px;
- }
-
-
-.navbar-light .navbar-brand span {
-	color: #0F4CA3
-}
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-	color: #000;
-}
-.navbar-light .navbar-nav .nav-link {
-	color: #000;
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-	color: #000;
-}
-.w-100 {
-	height: 100vh;
-}
-.navbar-toggler {
-	padding: 1px 5px;
-	font-size: 18px;
-	line-height: 0.3;
-	background: #fff;
-}
-
-/* Gallery */
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-	flex: 25%;
-	max-width: 33.3%;
-	padding: 0 4px;
-  }
-  
-  .column img {
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
-	filter: grayscale(1) brightness(0.5);
-	border-radius: 5px;
-	cursor: pointer;
-	transition: 0.3s linear;
-  }
-  .column img:hover {
-	filter: grayscale(0);
-  }
-
-  @media screen and (max-width: 800px) {
-	.column {
-	  flex: 50%;
-	  max-width: 50%;
-	}
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-	.column {
-	  flex: 100%;
-	  max-width: 100%;
-	}
-	.column img {
-	  filter: grayscale(0) brightness(1);
-	}
-  }
-  
-
-@media only screen and (max-width: 767px) {
-	.navbar-nav {
-		text-align: center;
-	}
-	.carousel-caption {
-		bottom: 165px;
-	}
-	.carousel-caption h5 {
-		font-size: 17px;
-	}
-	.carousel-caption a {
-		padding: 10px 15px;
-		font-size: 15px;
-	}
-	.navbar .getstarted {
-		display: none;
-	}
 }
