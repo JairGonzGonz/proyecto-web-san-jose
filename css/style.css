@@ -243,7 +243,7 @@ ajustando la posición y tamaño del texto en los elementos de la clase .carouse
 	font-size: 20px;
 }
 
-#nombre_apellido,
+#nombre-apellido,
 #celular,
 #correo {
 	max-width: 400px;
@@ -286,7 +286,7 @@ ajustando la posición y tamaño del texto en los elementos de la clase .carouse
 	margin-bottom: 25px;
 }
 
-.my_banner {
+.my-banner {
 	margin-top: auto;
 	margin-bottom: auto;
 	justify-content: center;
